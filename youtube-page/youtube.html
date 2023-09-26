@@ -9,6 +9,7 @@
     <link rel = "stylesheet" href = "styles/general.css">
     <link rel = "stylesheet" href = "styles/video.css">
     <link rel = "stylesheet" href = "styles/header.css">
+    <link rel = "stylesheet" href = "styles/sidebar.css">
 
   </head>
 
@@ -26,6 +27,7 @@
         <input class = "search-bar" type = "text" placeholder="Search">
         <button class = "search_btn">
           <img class = "search_icon" src = "icons/search.svg">
+          <div class = "tooltip">Search</div>
         </button>
         <button class = "voice-search_btn">
           <img class = "voice_search_icon" src = "icons/voice-search-icon.svg">
@@ -36,12 +38,43 @@
       <div class = "right-section">
         <img class = "upload_icon" src = "icons/upload.svg">
         <img class = "youtube_apps_icon" src = "icons/youtube-apps.svg">
-        <img class = "notifications_icon" src = "icons/notifications.svg">
+
+        <div class = "notifications_icon_container">
+          <img class = "notifications_icon" src = "icons/notifications.svg">
+          <div class = "notifications_count">3</div>
+        </div>
+        
         <img class = "current_user_pic" src = "channel_pics/channel-6.jpeg">
       </div>
       
     </div>
 
+    <div class = "sidebar">
+      <div class = "sidebar-link">
+        <img src = "icons/sidebar-home.svg">
+        <div>Home</div>
+      </div>
+      <div class = "sidebar-link">
+        <img src = "icons/sidebar-explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class = "sidebar-link">
+        <img src = "icons/sidebar-subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class = "sidebar-link">
+        <img src = "icons/sidebar-originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class = "sidebar-link">
+        <img src = "icons/sidebar-youtube-music.svg">
+        <div>Youtube Music</div>
+      </div>
+      <div class = "sidebar-link">
+        <img src = "icons/sidebar-library.svg">
+        <div>Library</div>
+      </div>
+    </div>
     
 
 
@@ -51,6 +84,7 @@
         
         <div class = "thumbnail-row">
           <img class = "thumbnail" src="thumbnails/icons/assets/thumbnail-1.webp">
+          <div class = "video_time">14:20</div>
         </div>
 
         <div class = "video-info-grid">
@@ -76,6 +110,7 @@
 
         <div class = "thumbnail-row">
           <img class = "thumbnail" src="thumbnails/icons/assets/thumbnail-2.webp">
+          <div class = "video_time">14:20</div>
         </div>
 
         <div class = "video-info-grid" >
@@ -101,6 +136,7 @@
         
         <div class = "thumbnail-row">
           <img class = "thumbnail" src="thumbnails/icons/assets/thumbnail-1.webp">
+          <div class = "video_time">14:20</div>
         </div>
 
         <div class = "video-info-grid">
@@ -126,6 +162,7 @@
 
         <div class = "thumbnail-row">
           <img class = "thumbnail" src="thumbnails/icons/assets/thumbnail-2.webp">
+          <div class = "video_time">14:20</div>
         </div>
 
         <div class = "video-info-grid" >
@@ -150,6 +187,7 @@
         
         <div class = "thumbnail-row">
           <img class = "thumbnail" src="thumbnails/icons/assets/thumbnail-1.webp">
+          <div class = "video_time">14:20</div>
         </div>
 
         <div class = "video-info-grid">
@@ -175,6 +213,7 @@
 
         <div class = "thumbnail-row">
           <img class = "thumbnail" src="thumbnails/icons/assets/thumbnail-2.webp">
+          <div class = "video_time">14:20</div>
         </div>
 
         <div class = "video-info-grid" >

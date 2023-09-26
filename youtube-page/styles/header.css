@@ -3,6 +3,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228,228,228);
+  z-index: 100;
 }
 
 .left-section {
@@ -57,6 +66,27 @@
   background-color: rgb(240,240,240);
   margin-left: -1px;
   margin-right: 10px;
+  position: relative;
+}
+
+.search_btn .tooltip {
+  position:absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -26px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.search_btn:hover .tooltip {
+  opacity: 1;
 }
 
 .search_icon {
@@ -96,6 +126,25 @@
 
 .notifications_icon {
   height: 24px;
+}
+
+.notifications_icon_container {
+  position: relative;
+}
+
+.notifications_count {
+  position: absolute;
+  background-color: rgb(200,0,0);
+  top: -2px;
+  right: -5px;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 20px;
+  color: white;
 }
 
 .current_user_pic {
